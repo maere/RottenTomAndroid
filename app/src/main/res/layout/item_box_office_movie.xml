@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/lvPosterImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxHeight="70dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/small_movie_poster"
+        />
+   <TextView
+       android:id="@+id/tvMovieTitle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="My Movie"
+       android:layout_toRightOf="@+id/lvPosterImage"
+       android:layout_alignTop="@+id/lvPosterImage"
+       />
+
+    <TextView
+        android:id="@+id/tvCriticsScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:layout_below="@+id/tvMovieTitle"
+        android:layout_toRightOf="@+id/lvPosterImage"
+        />
+
+</RelativeLayout>
+
